@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_filter_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--android:background="0x106000d"-->
+    <!--<ImageView-->
+    <!--android:id="@+id/btn_camera_favourite"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:layout_marginBottom="10dp"-->
+    <!--android:layout_marginLeft="10dp"-->
+    <!--android:src="@drawable/take_filter_favorite_btn"-->
+    <!--android:visibility="gone" />-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filter_listView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+    <!--android:background="0x106000c"-->
+    <!--<ImageView-->
+    <!--android:id="@+id/btn_camera_closefilter"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"-->
+    <!--android:background="#ffffff"-->
+    <!--android:scaleType="center"-->
+    <!--android:src="@drawable/btn_layout_filters_bar_close" />-->
+
+
+</LinearLayout>

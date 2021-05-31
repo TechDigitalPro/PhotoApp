@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CartoonEffect</string>
+
+
+
+
+
+    <string name="filter_none">Basic</string>
+    <string name="filter_amaro">Painting</string>
+    <string name="filter_brannan">Pain2</string>
+    <string name="filter_brooklyn">Strokes</string>
+    <string name="filter_Earlybird">Art</string>
+    <string name="filter_freud">Freud</string>
+    <string name="filter_hefe">Hefe</string>
+    <string name="filter_xproii">XproII</string>
+    <string name="filter_whitecat">WhiteCat</string>
+    <string name="filter_blackcat">BlackCat</string>
+    <string name="filter_romance">Dirty</string>
+    <string name="filter_sakura">Watermark</string>
+    <string name="filter_antique">Print</string>
+    <string name="filter_beauty">Comic</string>
+    <string name="filter_calm">Burn</string>
+    <string name="filter_cool">Cool</string>
+    <string name="filter_emerald">Emerald</string>
+    <string name="filter_evergreen">Blackish</string>
+    <string name="filter_fairytale">Colored</string>
+    <string name="filter_healthy">Artist</string>
+    <string name="filter_latte">Sketch</string>
+    <string name="filter_nostalgia">Watermark2</string>
+    <string name="filter_tender">Tender</string>
+    <string name="filter_warm">Old</string>
+    <string name="filter_sweets">Paper</string>
+    <string name="filter_sunrise">Cartoon</string>
+    <string name="filter_sunset">Pencil</string>
+    <string name="filter_skinwhiten">Blackboard</string>
+    <string name="filter_crayon">Styke</string>
+    <string name="filter_sketch">Matrial</string>
+    <string name="edit_filter">Filter</string>
+    <string name="edit_edit">Edit</string>
+    <string name="edit_adds">Adds</string>
+    <string name="edit_frame">Frame</string>
+    <string name="edit_beauty">Beauty</string>
+    <string name="edit_contrast">Contrast</string>
+    <string name="edit_exposure">Exposure</string>
+    <string name="edit_vibrance">Vibrance</string>
+    <string name="edit_saturation">Saturation</string>
+    <string name="edit_sharpness">Sharpness</string>
+    <string name="edit_brightness">Bright</string>
+    <string name="edit_hue">Hue</string>
+</resources>

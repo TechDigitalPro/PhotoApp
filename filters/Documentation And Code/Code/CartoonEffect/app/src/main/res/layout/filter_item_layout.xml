@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/filter_root"
+    android:layout_width="60dp"
+    android:layout_height="80dp"
+    android:layout_gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+    android:background="#ffffff"
+    android:orientation="vertical"
+   android:padding="2dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/filter_thumb_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_1" />
+
+        <FrameLayout
+            android:id="@+id/filter_thumb_selected"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone">
+
+            <View
+                android:id="@+id/filter_thumb_selected_bg"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/filter_thumb_selected_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:src="@drawable/selector_filter_selected" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/filter_thumb_favorite_layout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/take_filter_favorite_icon01_skin_flat"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/filter_thumb_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/take_filter_favorite_icon02_skin_flat"
+                android:transformPivotX="4dp"
+                android:transformPivotY="4dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/filter_thumb_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:gravity="center"
+        android:text="@string/filter_none"
+        android:textColor="#201e1e"
+        android:textSize="10sp" />
+</FrameLayout>

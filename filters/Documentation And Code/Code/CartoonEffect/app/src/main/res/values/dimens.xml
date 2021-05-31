@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="disabled_alpha_material_light">1dp</dimen>
+    <dimen name="disabled_alpha_material_dark">1dp</dimen>
+    <dimen name="highlight_alpha_material_light">1dp</dimen>
+    <dimen name="highlight_alpha_material_dark">1dp</dimen>
+    <dimen name="highlight_alpha_material_colored">1dp</dimen>
+
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="seekbar_progress_height">3dp</dimen>
+    <dimen name="seekbar_thumb_offset">6dp</dimen>
+    <dimen name="seekbar_button_height">60dp</dimen>
+    <dimen name="seekbar_gradient_seek_bar_line_width">12px</dimen>
+    <dimen name="seekbar_layout_height">220dp</dimen>
+    <dimen name="seekbar_line_width">2px</dimen>
+    <dimen name="seekbar_margin_left">34dp</dimen>
+    <dimen name="seekbar_margin_right">34dp</dimen>
+    <dimen name="seekbar_nail_radius">8px</dimen>
+    <dimen name="seekbar_nail_stroke_width">2px</dimen>
+    <dimen name="seekbar_thumb_radius">24px</dimen>
+    <dimen name="bottomsheet_default_sheet_width">0dp</dimen>
+    <dimen name="bottomsheet_image_tile_spacing">4dp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+</resources>

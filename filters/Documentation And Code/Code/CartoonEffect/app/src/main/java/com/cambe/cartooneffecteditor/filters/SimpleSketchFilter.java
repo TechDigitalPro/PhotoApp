@@ -1,0 +1,9 @@
+package com.cambe.cartooneffecteditor.filters;
+
+import project.android.imageprocessing.filter.processing.SobelEdgeDetectionFilter;
+
+public class SimpleSketchFilter extends SobelEdgeDetectionFilter {
+    protected String getFragmentShader() {
+        return "precision mediump float;\nuniform sampler2D u_Texture0;\nvarying vec2 v_TexCoord;\nuniform float u_TexelWidth;\nuniform float u_TexelHeight;\nconst vec3 W = vec3(0.2125, 0.7154, 0.0721);\nvoid main(){\nfloat dx = 1./720.;\nfloat dy = 1./720.;\nvec3 sample4 = texture2D(u_Texture0, vec2(v_TexCoord.x, v_TexCoord.y)).rgb;\nfloat gray = dot(sample4, W);\n   vec2 up = vec2(0.0, u_TexelHeight);\n   vec2 right = vec2(u_TexelWidth, 0.0);\n   float bottomLeftIntensity = texture2D(u_Texture0, v_TexCoord - up - right).r;\n   float topRightIntensity = texture2D(u_Texture0, v_TexCoord + up + right).r;\n   float topLeftIntensity = texture2D(u_Texture0, v_TexCoord + up - right).r;\n   float bottomRightIntensity = texture2D(u_Texture0, v_TexCoord - up + right).r;\n   float leftIntensity = texture2D(u_Texture0, v_TexCoord - right).r;\n   float rightIntensity = texture2D(u_Texture0, v_TexCoord + right).r;\n   float bottomIntensity = texture2D(u_Texture0, v_TexCoord - up).r;\n   float topIntensity = texture2D(u_Texture0, v_TexCoord + up).r;\n   float h = -topLeftIntensity - 2.0 * topIntensity - topRightIntensity + bottomLeftIntensity + 2.0 * bottomIntensity + bottomRightIntensity;\n   float v = -bottomLeftIntensity - 2.0 * leftIntensity - topLeftIntensity + bottomRightIntensity + 2.0 * rightIntensity + topRightIntensity;\n   float mg = length(vec2(h, v));\n   if (mg > 0.4)\n       mg = 0.9;\n   else if (mg < 0.2)\n       mg = 0.0;\n   else\n       mg = 2.0*mg;   float mag = 1.0 - mg;\n   gl_FragColor = vec4(vec3(mag), 1.0);\n}\n";
+    }
+}
